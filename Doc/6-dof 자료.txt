@@ -1,0 +1,36 @@
+
+stewart platform
+	https://github.com/ThomasKNR/RotaryStewartPlatform
+
+
+
+동영상
+6-DOF DIY
+	https://www.youtube.com/watch?v=c1oxyk2IIOQ
+	https://www.youtube.com/watch?v=QdKo9PYwGaU
+	https://www.youtube.com/watch?v=Kv-RF0Ex_HA
+	https://www.youtube.com/watch?v=1jrP3_1ML9M
+	https://www.youtube.com/watch?v=J2dpYE_AMlM
+	https://www.youtube.com/watch?v=j4OmVLc_oDw
+		- ball control
+	https://www.youtube.com/watch?v=epvRJPPvALc
+		- roll, pitch, yaw, surge, sway
+
+
+
+6-DOF 모션
+	https://www.youtube.com/watch?v=8XanSgZEsa4
+
+
+
+3-DOF 모션
+	https://www.youtube.com/watch?v=VvBojB_RUBA
+
+
+Simulation Software
+	https://www.youtube.com/watch?v=BCefl2we-DA
+	https://www.youtube.com/watch?v=9zb-xDrxjb8
+
+
+
+
