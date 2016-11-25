@@ -252,6 +252,9 @@ void C3DView::Update(const float deltaSeconds)
 		m_actuator[i * 2].SetLine(m_renderer, actuatorPos, mobileV[i], 0.1f);
 		m_actuator[i * 2 + 1].SetLine(m_renderer, actuatorPos, mobileV[(i + 1) % 3], 0.1f);
 
+		g_controlDlg->m_actuator[i*2] = sqrt(actuatorPos.LengthRoughly(mobileV[i]));
+		g_controlDlg->m_actuator[i*2+1] = sqrt(actuatorPos.LengthRoughly(mobileV[(i + 1) % 3]));
+
 		baseR *= brm * brm;
 		mobileR *= mrm;
 	}
@@ -273,15 +276,15 @@ void C3DView::Render()
 		m_light.Bind(m_renderer, 0);
 
 		// 백그라운드 그리드, 축 출력.
-		m_renderer.RenderGrid();
-		m_renderer.RenderAxis();
+		//m_renderer.RenderGrid();
+		//m_renderer.RenderAxis();
 
-		m_base.Render(m_renderer);
-		m_mobile.Render(m_renderer);
+		//m_base.Render(m_renderer);
+		//m_mobile.Render(m_renderer);
 		for (int i=0; i < 6; ++i)
 			m_actuator[i].Render(m_renderer);
 
-		m_renderer.RenderFPS();
+		//m_renderer.RenderFPS();
 
 		m_renderer.EndScene();
 		m_renderer.Present();

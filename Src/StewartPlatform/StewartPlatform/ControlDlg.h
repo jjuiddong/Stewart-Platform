@@ -9,8 +9,14 @@ public:
 
 	enum { IDD = IDD_DIALOG_CONTROL };
 
+
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+
+
+public:
+	float m_actuator[6];		// actuator length
+
 
 	DECLARE_MESSAGE_MAP()
 public:

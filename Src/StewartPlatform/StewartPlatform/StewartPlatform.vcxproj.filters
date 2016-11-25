@@ -5,6 +5,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="UIComponent">
+      <UniqueIdentifier>{9c5b3e88-9fd1-4ee4-aa04-295509202899}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h" />
@@ -14,6 +17,19 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="C3DView.h" />
     <ClInclude Include="ControlDlg.h" />
+    <ClInclude Include="ActuatorGraphDlg.h" />
+    <ClInclude Include="..\..\..\..\Common\UIComponent\PlotWindow.h">
+      <Filter>UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UIComponent\MultiPlotWindow.h">
+      <Filter>UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UIComponent\PlotGlobal.h">
+      <Filter>UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\UIComponent\BPCtrlAnchorMap.h">
+      <Filter>UIComponent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -21,6 +37,13 @@
     <ClCompile Include="StewartPlatformDlg.cpp" />
     <ClCompile Include="C3DView.cpp" />
     <ClCompile Include="ControlDlg.cpp" />
+    <ClCompile Include="ActuatorGraphDlg.cpp" />
+    <ClCompile Include="..\..\..\..\Common\UIComponent\PlotWindow.cpp">
+      <Filter>UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\UIComponent\MultiPlotWindow.cpp">
+      <Filter>UIComponent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="StewartPlatform.rc">

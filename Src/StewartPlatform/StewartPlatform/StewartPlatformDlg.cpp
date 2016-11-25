@@ -5,6 +5,7 @@
 #include "afxdialogex.h"
 #include "C3DView.h"
 #include "ControlDlg.h"
+#include "ActuatorGraphDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -64,6 +65,16 @@ BOOL CStewartPlatformDlg::OnInitDialog()
 	ccr.OffsetRect(CPoint(w/2-wr.Width()/2+wr.Width(), h/2-wr.Height()/2));
 	m_controlDlg->MoveWindow(ccr);
 	g_controlDlg = m_controlDlg;
+
+	m_actuatorDlg = new CActuatorGraphDlg();
+	m_actuatorDlg->Create(CActuatorGraphDlg::IDD);
+	m_actuatorDlg->ShowWindow(SW_SHOW);
+	CRect acr;
+	m_actuatorDlg->GetWindowRect(acr);
+	acr.OffsetRect(-CPoint(acr.left, acr.top));
+	acr.OffsetRect(CPoint(w / 2 - wr.Width() / 2 - acr.Width(), h / 2 - wr.Height() / 2));
+	m_actuatorDlg->MoveWindow(acr);
+	g_actuatorDlg = m_actuatorDlg;
 
 	return TRUE;
 }
@@ -151,6 +162,11 @@ void CStewartPlatformDlg::MainLoop(const float deltaSeconds)
 	{
 		m_3dView->Update(deltaSeconds);
 		m_3dView->Render();
+	}
+
+	if (m_actuatorDlg)
+	{
+		m_actuatorDlg->Update(deltaSeconds);
 	}
 }
 

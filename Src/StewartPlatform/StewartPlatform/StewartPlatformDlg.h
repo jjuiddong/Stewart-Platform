@@ -6,6 +6,7 @@
 
 class C3DView;
 class CControlDlg;
+class CActuatorGraphDlg;
 
 class CStewartPlatformDlg : public CDialogEx
 {
@@ -26,6 +27,7 @@ protected:
 	bool m_isLoop;
 	C3DView *m_3dView;
 	CControlDlg *m_controlDlg;
+	CActuatorGraphDlg *m_actuatorDlg;
 
 	virtual BOOL OnInitDialog();
 	afx_msg void OnPaint();

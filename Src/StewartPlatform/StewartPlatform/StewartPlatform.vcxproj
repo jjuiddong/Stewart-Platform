@@ -178,6 +178,11 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Common\UIComponent\BPCtrlAnchorMap.h" />
+    <ClInclude Include="..\..\..\..\Common\UIComponent\MultiPlotWindow.h" />
+    <ClInclude Include="..\..\..\..\Common\UIComponent\PlotGlobal.h" />
+    <ClInclude Include="..\..\..\..\Common\UIComponent\PlotWindow.h" />
+    <ClInclude Include="ActuatorGraphDlg.h" />
     <ClInclude Include="C3DView.h" />
     <ClInclude Include="ControlDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -187,6 +192,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Common\UIComponent\MultiPlotWindow.cpp" />
+    <ClCompile Include="..\..\..\..\Common\UIComponent\PlotWindow.cpp" />
+    <ClCompile Include="ActuatorGraphDlg.cpp" />
     <ClCompile Include="C3DView.cpp" />
     <ClCompile Include="ControlDlg.cpp" />
     <ClCompile Include="stdafx.cpp">

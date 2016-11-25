@@ -19,6 +19,7 @@ CControlDlg::CControlDlg(CWnd* pParent /*=NULL*/)
 	, m_editSway(0)
 	, m_controlMode(0)
 {
+	ZeroMemory(m_actuator, sizeof(m_actuator));
 
 }
 

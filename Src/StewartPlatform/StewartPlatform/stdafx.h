@@ -56,6 +56,10 @@
 
 #include "../../../../Common/Common/common.h"
 #include "../../../../Common/Graphic/graphic.h"
+#include "../../../../Common/UIComponent/PlotGlobal.h"
+#include "../../../../Common/UIComponent/PlotWindow.h"
+#include "../../../../Common/UIComponent/MultiPlotWindow.h"
+#include "../../../../Common/UIComponent/BPCtrlAnchorMap.h"
 using namespace common;
 
 #include <mmsystem.h>
@@ -64,4 +68,6 @@ using namespace common;
 #pragma comment(lib, "winmm.lib")
 
 class CControlDlg;
+class CActuatorGraphDlg;
 extern CControlDlg *g_controlDlg;
+extern CActuatorGraphDlg *g_actuatorDlg;
